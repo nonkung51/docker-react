@@ -7,4 +7,4 @@ before_install:
   - docker build -t nonkung51/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true nonkung51/docker-react
+  - docker run -e CI=true nonkung51/docker-react yarn test
